@@ -1,9 +1,43 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
 import App from './App';
+import { store } from './store';
 
-test('renders learn react link', () => {
+afterEach(cleanup);
+
+test('test app loading', async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const loading = screen.getByTestId('loading');
+  expect(loading).toBeInTheDocument();
 });
+
+test('test app home page', async () => {
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+  const loading = screen.getByTestId('home');
+  expect(loading).toBeInTheDocument();
+});
+
+test('test app home page dropdown', async () => {
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+  const loading = screen.getByTestId('search-orign-cities-dropdown');
+  expect(loading).toBeInTheDocument();
+});
+
+test('test app home page submit button', async () => {
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+  const loading = screen.getByTestId('travel-submit');
+  expect(loading).toBeInTheDocument();
+});
+
