@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - `yarn` to install all dependencies
 - `yarn start`
 - Runs the app in the development mode. http://localhost:3000 to view it in the browser.
-- `yarn test` - shallow and small testing currently in
-- `yarn build and firebase deploy`- build and deployed
+- `yarn test` - shallow and small testing temporarily
+- `yarn build / firebase deploy`- build / deploy
 
 ## e2e test via cypress - `yarn cypress:open`
 ![image](https://user-images.githubusercontent.com/8097415/199290435-3da57dce-bf4d-4d60-b0b0-42138222df75.png)
