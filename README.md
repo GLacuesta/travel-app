@@ -29,7 +29,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Challenges
 - Validation more in backend rather than in frontend then applying to the state/props
 - Getting query params then matching it to the options.. Intermediate City put me on a little break on this :)
+- In details, matching the query params to an options requires fetch. It got me thinking on what might be an effecient approach.
 - JS loading state is fast that I had to segragate some array manipulation to lessen computation performance since I need to mock bandwidth pending state
-- whenever VS code re init typescript, typing errors pop out - never[], any[]; had to debug and apply workaround but usually go away away reloading window 
+- whenever VS code re init typescript, typing errors pop out - never[], any[]; had to debug and apply workaround but usually go away after reloading window 
 
 
